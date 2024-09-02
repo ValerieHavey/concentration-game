@@ -1,0 +1,55 @@
+body {
+    background-color: lightskyblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: lightskyblue;
+    padding: 8px 16px;
+    justify-content: space-between;
+  }
+
+#games {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 12px;
+    align-items: center;
+
+}
+#actions {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    gap: 12px;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h2 {
+    color: blue;
+
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .sqr {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 3px solid black;
+    font-size: 64px;
+    text-align: center;
+    background-image: url(https://i.imgur.com/SD17wIz.jpeg);
+  }
+  
