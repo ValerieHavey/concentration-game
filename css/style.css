@@ -1,6 +1,10 @@
 body {
     background-color: lightskyblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(https://i.imgur.com/MvA6ux3.jpeg);
+    background-size: cover;
+    
+
 }
 
 nav {
@@ -37,19 +41,71 @@ h2 {
 
 }
 
-.board {
+.cards {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
     margin-bottom: 20px;
-  }
+}
   
-  .sqr {
+.card-front {
     width: 30%;
     aspect-ratio: 1/1;
-    border: 3px solid black;
+    border: 3px solid navy;
     font-size: 64px;
     text-align: center;
-    background-image: url(https://i.imgur.com/SD17wIz.jpeg);
-  }
+}
+
+.card-back {
+    background-image: url(https://imgur.com/pnJkGIu);
+}
   
+/*div.card-front#0, div.card-front#1 {
+    background-image: url(https://i.imgur.com/efNNGFH.jpeg);
+    /*highland cow*/
+
+
+/*#2, #3 {
+    background-image: url(https://i.imgur.com/1PCedMK.jpeg);
+    /*horse*/
+
+
+/*#4, #5 {
+    background-image: url(https://i.imgur.com/iOzk7FA.jpeg)
+    /*curious fox*/
+
+
+/*#6, #7 {
+    background-image: url(https://i.imgur.com/p5i7MUZ.jpeg);
+    /*bunny*/
+
+
+/*#8, #9 {
+    background-image: url(https://i.imgur.com/hIz4fm9.jpeg);
+    /*Blue the pig*/
+
+
+/*#10, #11 {
+    background-image: url(https://i.imgur.com/hirjk24.jpeg);
+    /*Serena and Thelma*/
+
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    border: 3px solid; 
+}
+
+p.score {
+    text-align: center;
+    font-size: 24px;
+
+}
+
+#player-one {
+    text-align: left;
+    font-size: 16px;
+}
