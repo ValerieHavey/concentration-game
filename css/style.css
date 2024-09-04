@@ -1,18 +1,13 @@
 body {
     background-color: lightskyblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(https://i.imgur.com/MvA6ux3.jpeg);
-    background-size: cover;
-    
-
 }
-
+        
 nav {
     display: flex;
-    background-color: lightskyblue;
     padding: 8px 16px;
     justify-content: space-between;
-  }
+}
 
 #games {
     display: flex;
@@ -20,8 +15,8 @@ nav {
     align-content: flex-start;
     gap: 12px;
     align-items: center;
-
 }
+    
 #actions {
     display: flex;
     justify-content: space-between;
@@ -30,82 +25,69 @@ nav {
     align-items: center;
 }
 
-
 h1 {
     text-align: center;
     color: blue;
 }
-
+    
 h2 {
     color: blue;
-
 }
 
-.cards {
+.gameboard {
+    display: flex;
+}        
+
+.board {
     display: flex;
     flex-wrap: wrap;
     width: 600px;
     margin-bottom: 20px;
 }
-  
-.card-front {
-    width: 30%;
-    aspect-ratio: 1/1;
-    border: 3px solid navy;
-    font-size: 64px;
-    text-align: center;
+
+.message {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.card-back {
-    background-image: url(https://imgur.com/pnJkGIu);
-}
-  
-/*div.card-front#0, div.card-front#1 {
-    background-image: url(https://i.imgur.com/efNNGFH.jpeg);
-    /*highland cow*/
-
-
-/*#2, #3 {
-    background-image: url(https://i.imgur.com/1PCedMK.jpeg);
-    /*horse*/
-
-
-/*#4, #5 {
-    background-image: url(https://i.imgur.com/iOzk7FA.jpeg)
-    /*curious fox*/
-
-
-/*#6, #7 {
-    background-image: url(https://i.imgur.com/p5i7MUZ.jpeg);
-    /*bunny*/
-
-
-/*#8, #9 {
-    background-image: url(https://i.imgur.com/hIz4fm9.jpeg);
-    /*Blue the pig*/
-
-
-/*#10, #11 {
-    background-image: url(https://i.imgur.com/hirjk24.jpeg);
-    /*Serena and Thelma*/
-
-
-.score {
+.scoreboard {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
     height: 300px;
-    border: 3px solid; 
+    border: 3px solid;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8;
 }
 
-p.score {
-    text-align: center;
+#scoretitle {
+    font-weight: bold;
     font-size: 24px;
-
+    text-align: center;
 }
 
 #player-one {
     text-align: left;
     font-size: 16px;
+    font-weight: bold;
+}
+
+#player-two {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+   
+.card-back {
+    background-image: url(../assets/Barn.jpeg);
+    background-size: cover;
+    opacity: 0.7;
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 3px solid navy;
+    font-size: 64px;
+    text-align: center;
 }
