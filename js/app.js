@@ -126,71 +126,135 @@ console.log('Welcome to Concetration!');
 
 /*-------------- Constants -------------*/
 
-
+const cards = document.querySelectorAll('.cardBack');
+const gameBoard = [];
 
 
 /*---------- Variables (state) ---------*/
 
-let cards = [
+let board  = ['', '', '', '', '', '', '', '', '', '', '',''];
+let playerTurn = 1; 
+let winner = false; 
+let tie = false;
+let flippedCards = [];
+let firstCard, secondCard;
+
+let cardFronts = [
     {
-      revealImage: '../assets/Blue the pig.jpeg',
-      cardPair: 1
+        revealImage: "./assets/Bluethepig.jpg",
+        cardPair: 1
     }, 
     {
-      revealImage: '../assets/Blue the pig.jpeg',
-      cardPair: 1
+        revealImage: "./assets/Bluethepig.jpg",
+        cardPair: 1
     }, 
     {
-      revealImage: '../assets/bunny.jpeg',
-      cardPair: 2
+        revealImage: "./assets/bunny.jpeg",
+        cardPair: 2
     },
     {
-      revealImage: '../assets/bunny.jpeg',
-      cardPair: 2
+        revealImage: "./assets/bunny.jpeg",
+        cardPair: 2
     },
     {
-      revealImage: './assets/fox.jpeg',
-      cardPair: 3
+        revealImage: "./assets/fox.jpeg",
+        cardPair: 3
     },
     {
-      revealImage: './assets/fox.jpeg',
-      cardPair: 3
+        revealImage: "./assets/fox.jpeg",
+        cardPair: 3
     },
     {
-        revealImage: './assets/highland cow.jpeg',
+        revealImage: "./assets/highlandcow.jpeg",
         cardPair: 4
-      },
-      {
-        revealImage: './assets/highland cow.jpeg',
+    },
+    {
+        revealImage: "./assets/highlandcow.jpeg",
         cardPair: 4
-      },{
-        revealImage: './assets/horse.jpeg',
+    },
+    {
+        revealImage: "./assets/horse.jpeg",
         cardPair: 5
-      },
-      {
-        revealImage: './assets/horse.jpeg',
+    },
+    {
+        revealImage: "./assets/horse.jpeg",
         cardPair: 5
-      },{
-        revealImage: './assets/Serena and Thelma.jpeg',
+    },
+    {
+        revealImage: "./assets/SerenaandThelma.jpg",
         cardPair: 6
-      },
-      {
-        revealImage: './assets/Serena and Thelma.jpeg',
+    },
+    {
+        revealImage: "./assets/SerenaandThelma.jpg",
         cardPair: 6
-      },
-  ]
+    },
+];
 
 /*----- Cached Element References  -----*/
+
+const messageElm = document.querySelector('#message');
+const resetBtnElm = document.querySelector('#reset');
 
 
 /*-------------- Functions -------------*/
 
+// function flipCard(revealImage) {
+//     const elem = document.getElementById('cardBack');
+//     elem.flip.card = revealImage;
+// };
 
-/*----------- Event Listeners ----------*/
-console.log(document.getElementById('0'));
-document.getElementById('0').classList.remove("card-back");
-console.log(document.getElementById('0'));
-document.getElementById('0').style.backgroundImage="url("+cards[2].revealImage+")";
-document.getElementById('0').style.border="3px solid red";
-console.log(cards[2].revealImage);
-console.log(document.getElementById("0").style.backgroundImage);
+// function flipCard(event) {
+//     event.currentTarget.classList.toggle('flip');
+// };
+
+function handleClick(event) {
+    console.log(event.target.parentElement.id);
+    const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
+    console.log(targetImage);
+    targetImage.setAttribute('src', './assets/Bluethepig.jpg');
+};
+
+function handleClick(event) {
+    console.log(event.target.parentElement.id);
+    const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
+    console.log(targetImage);
+    targetImage.setAttribute('src', './assets/SerenaandThelma.jpg');
+};
+
+cards.forEach(cardBack => {
+    console.log('something');
+    cardBack.addEventListener('click', handleClick);
+});
+
+
+
+// const render = () => {
+//     updateBoard();
+//     updateMessage();
+// };
+
+// const init = () => {
+//     board  = ['', '', '', '', '', '', '', '', '', '', '',''];
+//     playerTurn = '1';
+//     winner = false;
+//     tie = false;
+//     render();
+// };
+
+// init();
+
+//Fisher Yates shuffle function//
+// function randomize (cards) {
+//     for (let i = cards.length - 1; i > 0; i--)
+// };
+
+// const render = () => { 
+//     renderBoard(); 
+//     renderScores(); 
+//     renderControls(); 
+//     renderMessages(); 
+// } 
+
+// /*----------- Event Listeners ----------*/
+
+// resetBtnElm.addEventListener('click', init);

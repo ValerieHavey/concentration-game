@@ -2,7 +2,7 @@ body {
     background-color: lightskyblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-        
+
 nav {
     display: flex;
     padding: 8px 16px;
@@ -81,13 +81,21 @@ h2 {
     font-weight: bold;
 }
    
-.card-back {
-    background-image: url(../assets/Barn.jpeg);
+.cardBack {
+    background-image: url(./assets/Barn.jpeg);
     background-size: cover;
     opacity: 0.7;
     width: 30%;
     aspect-ratio: 1/1;
-    border: 3px solid navy;
+    border: 3px solid white;
     font-size: 64px;
     text-align: center;
+}
+
+.flip.card .cardFront {
+    transform: rotateY(180deg);
+}
+
+.flip.card .cardBack {
+    transform: rotateY(0deg);
 }
