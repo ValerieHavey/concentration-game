@@ -138,6 +138,8 @@ let winner = false;
 let tie = false;
 let flippedCards = [];
 let firstCard, secondCard;
+let numClicks = 0;
+let matchedPairs = 0;
 
 let cardFronts = [
     {
@@ -203,22 +205,42 @@ const resetBtnElm = document.querySelector('#reset');
 //     elem.flip.card = revealImage;
 // };
 
-// function flipCard(event) {
-//     event.currentTarget.classList.toggle('flip');
-// };
+
 
 function handleClick(event) {
-    console.log(event.target.parentElement.id);
-    const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
-    console.log(targetImage);
-    targetImage.setAttribute('src', './assets/Bluethepig.jpg');
-};
-
-function handleClick(event) {
-    console.log(event.target.parentElement.id);
-    const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
-    console.log(targetImage);
-    targetImage.setAttribute('src', './assets/SerenaandThelma.jpg');
+    if (matchedPairs < 6) {
+        if (numClicks < 2) {
+            console.log(event.target.parentElement.id);
+            const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
+            console.log(targetImage);
+            //targetImage.setAttribute('src', './assets/SerenaandThelma.jpg');
+            if (numClicks == 0) {
+                firstCard = event.target.parentElement.id
+            }
+            else {
+                secondCard = event.target.parentElement.id
+            }
+            let id = event.target.parentElement.id.substring(4)
+            targetImage.setAttribute('src', cardFronts[id].revealImage);
+            numClicks ++ ;
+        }
+        if (numClicks == 2) {
+            if (document.querySelector(`#${firstCard} img`).src == document.querySelector(`#${secondCard} img`).src) {
+                numClicks = 0;
+                console.log('match');
+                matchedPairs ++ ;
+            } else {
+                setTimeout(function() {
+                    document.querySelector(`#${firstCard} img`).setAttribute('src', './assets/Barn.jpeg');
+                    document.querySelector(`#${secondCard} img`).setAttribute('src', './assets/Barn.jpeg');
+                    numClicks = 0;
+                },2000);
+            }
+        }
+        if (matchedPairs == 6) {
+            document.querySelector('.message').innerHTML = 'You Win!';
+        }
+    }
 };
 
 cards.forEach(cardBack => {
@@ -226,7 +248,21 @@ cards.forEach(cardBack => {
     cardBack.addEventListener('click', handleClick);
 });
 
+function reset() {
+    matchedPairs = 0;
+    numClicks = 0;
+    document.querySelector('.message').innerHTML = '';
+    let cardDivs = document.querySelectorAll('.cardBack img');
+    cardDivs.forEach(card => {
+        card.setAttribute('src', './assets/Barn.jpeg');
+    })
+    randomize(cardFronts);
+}
 
+// function flipCard(event) {
+//     event.currentTarget.classList.toggle('cardBack');
+//     //use class list/ toggle to flip card back
+//};
 
 // const render = () => {
 //     updateBoard();
@@ -243,10 +279,18 @@ cards.forEach(cardBack => {
 
 // init();
 
+randomize(cardFronts)
+ console.log(cardFronts);
+
 //Fisher Yates shuffle function//
-// function randomize (cards) {
-//     for (let i = cards.length - 1; i > 0; i--)
-// };
+function randomize (cards) {
+    for (let i = cards.length - 1; i > 0; i--) {
+        let index = Math.floor(Math.random() * (i + 1));
+        let temp = cards[i];
+        cards[i] = cards[index];
+        cards[index] = temp;
+    }
+};
 
 // const render = () => { 
 //     renderBoard(); 
@@ -257,4 +301,4 @@ cards.forEach(cardBack => {
 
 // /*----------- Event Listeners ----------*/
 
-// resetBtnElm.addEventListener('click', init);
+resetBtnElm.addEventListener('click', reset);
