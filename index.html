@@ -8,64 +8,40 @@
     <title>Welcome to Concentration!</title>
 </head>
 <body>
-<header>
-    <nav>
-        <div id="games">
-          <p>More Games</p>
-          <p>About</p>
-          <p>Contact</p>
-          <p>Level Up!</p>
-        </div>
-        <div id="actions">
-          <p>🔍</p>
-          <p>Sign in</p>
-          <button>Sign up</button>
-        </div>
-    </nav>
-</header>
-    <h1>Welcome to Concentration!</h1>
-    <h2>Objective of the game</h2>
-        <ul>
-            <li>Collect as many matching pairs of cards as possible!</li>
-            <li>The player with the most matching sets of cards, wins.</li>
-        </ul>
-    <h2>Instructions</h2>
-        <ol>
-            <li>The first player will click two cards, which will then turn from face down to face up to reveal an image.</li>
-            <li>If the images match, the cards will remain face up and taken out of game play and that player receives one point!</li>
-            <li>If they do not match, the cards will return to face down mode</li>
-            <li>REMEMBER where the cards are! Attempt to get a matching pair!</li>
-            <li>Continue to take turns, clicking on two cards per turn, until all cards are matched and collected by the players.</li>
-            <li>The player with the most matching pairs, wins!</li>
-        </ol>
-    <section class="gameboard">
-        <div class="board">
-            <div class="cardBack" id="card0"><img src="./assets/Barn.jpeg" width="180px" height="220px"/></div>
-            <div class="cardBack" id="card1"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card2"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card3"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card4"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card5"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card6"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card7"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card8"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card9"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card10"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-            <div class="cardBack" id="card11"><img src="./assets/Barn.jpeg" width="180px" height="200px"/></div>
-        </div>
-        <div class="feedback">
-            <div class="message">Message:</div>
-    
-            <div class="scoreboard">
-                <p id="scoretitle">SCOREBOARD</p>
-                <p id="player-one">Player One:</p>
-                <p id="player-two">Player Two:</p>
-            </div>
-                
-        </div>
-    </section>
-
-    <button id="reset">Reset</button>
-
-    </body>
+    <header>
+        <h1>Welcome to Concentration!</h1>
+        <h1>The Game of Memory</h1>
+    </header>
+        <h2>Objective of the Game</h2>
+            <ul>
+                <li>Collect as many matching pairs of cards as possible!</li>
+                <li>If you collect all 6 matching pairs before the timer expires, you win!</li>
+            </ul>
+        <h2>Instructions</h2>
+            <ol>
+                <li>Press the Start Game button, which will activate the 60 second timer.
+                <li>Click on two cards, which will turn from face down to face up to reveal an image.</li>
+                <li>If the images match, the cards will remain face up and taken out of game play.</li>
+                <li>If they do not match, the cards will return face down to be played again.</li>
+                <li>Remember the placement of each image!</li>
+                <li>If you match all 6 pairs before the 60 second timer expires, you win!</li>
+                <li>If you do not match all 6 pairs before the timer expires, you lose and can play again.</li>
+            </ol>
+    <button id="reset">Start Game</button>    
+    <div id="countdown"></div>
+    <div class="board">
+        <div class="cardBack" id="card0"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card1"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card2"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card3"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card4"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card5"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card6"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card7"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card8"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card9"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card10"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+        <div class="cardBack" id="card11"><img src="./assets/Barn.jpeg" alt= "red barn" width="180px" height="200px"/></div>
+    </div>
+</body>
 </html>
