@@ -206,7 +206,7 @@ function handleClick(event) {
             const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
 
             if (numClicks === 0) {
-                firstCard === event.target.parentElement.id
+                firstCard = event.target.parentElement.id
             }
             else {
                 secondCard = event.target.parentElement.id
@@ -216,8 +216,8 @@ function handleClick(event) {
 
             numClicks ++ ;
         }
-        if (numClicks === 2) {
-            if (document.querySelector(`#${firstCard} img`).src === document.querySelector(`#${secondCard} img`).src) {
+        if (numClicks ===  2) {
+            if (document.querySelector(`#${firstCard} img`).src == document.querySelector(`#${secondCard} img`).src) {
                 numClicks = 0;
                 matchedPairs ++ ;
             } 
