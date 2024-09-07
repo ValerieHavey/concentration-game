@@ -1,25 +1,24 @@
 
 
-./assets/Screenshot_of_game.jpeg
+![Screenshot of Memory game with animal theme](https://imgur.com/ptFHyZp)
 
 
-# Welcome to Concentration!
-# The Game of Memory
+
+# Welcome to Concentration! The Game of Memory
   
+
 ## Objective of the Game
-    <ul>
-        Collect as many matching pairs of cards as possible!
-        If you collect all 6 matching pairs before the timer expires, you win!
+    *   Collect as many matching pairs of cards as possible!
+    *   If you collect all 6 matching pairs before the timer expires, you win!
 
 ## Instructions
-    <ol>
-        Press the Start Game button, which will activate the 60 second timer.
-        Click on two cards, which will turn from face down to face up to reveal an image.
-        If the images match, the cards will remain face up and taken out of game play.
-        If they do not match, the cards will return face down to be played again.
-        Remember the placement of each image!
-        If you match all 6 pairs before the 60 second timer expires, you win!
-        If you do not match all 6 pairs before the timer expires, you lose and can play again.
+    1.    Press the Start Game button, which will activate the 60 second timer.
+    2.    Click on two cards, which will turn from face down to face up to reveal an image.
+    3.   If the images match, the cards will remain face up and taken out of game play.
+    4.    If they do not match, the cards will return face down to be played again.
+    5.    Remember the placement of each image!
+    6.    If you match all 6 pairs before the 60 second timer expires, you win!
+    7.    If you do not match all 6 pairs before the timer expires, you lose and can play again.
 
 <!-- ReadMe Template Worksheet
 
@@ -71,7 +70,11 @@ Insert your Description here: -->
 
 ### Description:
 
-    In Week 7 we were asked to create the HTML, CSS and JavaScript of a browser based game. From the list provided, I chose the game of Concentration, also known as Memory, where a player selects from 12 back-facing cards to find 6 matching pairs.  We were required to use DOM manipulation techniques for an interactive experience, and include a win/loss condition, Flexbox or Grid CSS design, and include accessible features such as the WCAG 2.0 level AA color contrast standard and alt text. 
+    In Week 7 we were asked to create the HTML, CSS and JavaScript of a browser based game. 
+    
+    From the list provided, I chose the game of Concentration, also known as Memory, where a player selects from 12 back-facing cards to find 6 matching pairs.  
+    
+    We were required to use DOM manipulation techniques for an interactive experience, and include a win/loss condition, Flexbox or Grid CSS design, and include accessible features such as the WCAG 2.0 level AA color contrast standard and alt text. 
 
 
 
@@ -125,13 +128,12 @@ List every technology you used to complete the project. This can be in one long 
 Insert your Technologies Used here: -->
 
 ### Technologies Used:
-<ul>
+
     Front End:
     HTML
     CSS
     JavaScript
     Web Developer Tools in the browser
-</ul>
 
 <!-- Brief
 Instructions
@@ -144,31 +146,31 @@ This can either be in bullets or in a paragraph.
 Insert your Brief here: -->
 
 ### MVP:
-<ul>
-    Render the game in the browser using the DOM manipulation techniques demonstrated in lecture.
-    Include win/loss logic and render win/loss messages in HTML. The game you chose must have a win/lose condition.
-    Include separate HTML, CSS, JavaScript, and JavaScript data files organized in an appropriate directory structure.
-    Include all required features specific to your game. Game-specific required features are defined in the Required Features column in the table in the Recommended Games document, or as discussed with your instructor. If you want to build a game that is not on this list, you will need to present and discuss your game’s features with the instructional team for approval.
-    The game is deployed online so that the rest of the world can play it.
-</ul>
+
+*    Render the game in the browser using the DOM manipulation techniques demonstrated in lecture.
+*   Include win/loss logic and render win/loss messages in HTML. The game you chose must have a win/lose condition.
+*    Include separate HTML, CSS, JavaScript, and JavaScript data files organized in an appropriate directory structure.
+*    Include all required features specific to your game. Game-specific required features are defined in the Required Features column in the table in the Recommended Games document, or as discussed with your instructor. If you want to build a game that is not on this list, you will need to present and discuss your game’s features with the instructional team for approval.
+*    The game is deployed online so that the rest of the world can play it.
+
 
 ### Code Convention:
-<ul>    
-    The game can be played without encountering errors. No errors may be present in the console in the browser.
-    The code in the app adheres to coding conventions covered in lessons, like using plural names for arrays.
-    There is no remaining dead and/or commented out code or console logs outside of a commented out Code Graveyard section of your code.
-    The game may not utilize the prompt() or alert() methods.
-    The game is coded using proper indentation.
-</ul>
+
+*    The game can be played without encountering errors. No errors may be present in the console in the browser.
+*    The code in the app adheres to coding conventions covered in lessons, like using plural names for arrays.
+*    There is no remaining dead and/or commented out code or console logs outside of a commented out Code Graveyard section of your code.
+*    The game may not utilize the prompt() or alert() methods.
+*    The game is coded using proper indentation.
+
 
 ### UI/UX:
-<ul>
-    CSS Flexbox and/or Grid is used for page layout design.
-    Instructions about how to play the game are included in your app.
-    Colors used on the site have appropriate contrast that meet the WCAG 2.0 level AA standard.
-    All images on the site have alt text.
-    No text is placed on top of an image in a way that makes the text inaccessible.
-</ul>
+
+*    CSS Flexbox and/or Grid is used for page layout design.
+*    Instructions about how to play the game are included in your app.
+*    Colors used on the site have appropriate contrast that meet the WCAG 2.0 level AA standard.
+*    All images on the site have alt text.
+*    No text is placed on top of an image in a way that makes the text inaccessible.
+
 
 
 <!-- Planning
@@ -195,129 +197,134 @@ Insert your Planning here: -->
 ### Planning:
 
     Sketches done through Exclidraw
-    ./assets/Wire_frame_game.pdf
+    (add image)
 
 
-    #### User Story:
+#### User Story:
 
-As a user, I want to see a landing page when I arrive at the 
+*As a user, I want to see a landing page when I arrive at the 
 website to know I'm in the right place. 
 
-As a user, I want to see instructions and the intial set up of 
+*As a user, I want to see instructions and the intial set up of 
 the game.  
 
-As a user, I want to start the game and have the capability to click on two cards to flip them over.
+*As a user, I want to start the game and have the capability to click on two cards to flip them over.
 
-As a user, I want the computer to show me the front of the 
+*As a user, I want the computer to show me the front of the 
 cards, and then determine if the card images are the same:
 
-    If the card images are the same, they are a match, and taken 
+*If the card images are the same, they are a match, and taken 
 out of game play. 
-    If the card images are different, then they are returned to 
+
+*If the card images are different, then they are returned to 
 the face down position to be played again. 
 
-As a user, I want to know if I've won or lost the game.  
+*As a user, I want to know if I've won or lost the game.  
 
-As a user, I want to be able to continue to click on two cards until there are no more matching 
-pairs, or until the timer is expired and the game is over. 
+*As a user, I want to be able to continue to click on two cards until there are no more matching pairs, or until the timer is expired and the game is over. 
 
-As a user, I want to know if I've won the game and have the option to play 
+*As a user, I want to know if I've won the game and have the option to play 
 another round. 
 
-Misc: Colors/ images on cards will have the appropriate contrast 
+*Misc: Colors/ images on cards will have the appropriate contrast 
 to meet the WCAG 2.0 level AA standard. 
 
-All images will have alt text 
+*All images will have alt text 
 
-Theme: Images will likely be of animals. 
+*Theme: Images will likely be of animals. 
 
-    Pseudocode
-
-Pseudocode 
+#### Pseudocode
+ 
 1) Welcome to Concentration! 
 2) Objective of the Game
-        ul
 3) Instructions 
-        ol
 
 Game Set up in HTML: 
     <Div> 
     <cardBacks added to HTML per Usmans guidance>
 
-Gameboard:
-    Flexbox with 12 boxes
+Gameboard will be a flexbox with 12 boxes
 
 4) Create 12 playing cards, 6 pairs with matching images on the 
 front, and each with the same exact backside image.
-cardFront - 6 animal images, each assigned to 2 cards (let cardPair)
-cardBack - barn image 
-    Variable array of 6 images (cardFronts)
+cardFront - 6 animal images, each assigned to 2 cards (`let cardPair`)
+`cardBack` - barn image 
+    Variable array of 6 images (`cardFronts`)
 
 5) The computer shuffles the cards, and places them face down in 
         random order. 
     
-        Per Joe: Shuffling: 
-    Google how to shuffle/randomize my array 
-    Okay to use Fisher Yates shuffle algorithym (Okay this took some work/googling/ research)
+    >Per Joe: Shuffling: 
+    >>Google how to shuffle/randomize my array 
+    >>>Okay to use Fisher Yates shuffle algorithym (This definitely took some research/googling/ trial & error).
 
     
 6) Click on Start Game button, which sets timer & randomizes the cardFronts.
 
 7) Only two cards can be clicked per turn, at which time a matchedPair if/else function is called.
 
-    IF/ THEN functions: 
+___IF/ THEN functions___
+
 8) IF they are a match, THEN the cards are kept face up 
 
-9) IF they are not a match, THEN they are returned face down,  
+9) IF they are not a match, THEN they are returned face down,
 
-10) If all 6 pairs are matched before the 60 second timer expires, You Win!
+10) IF two cards are clicked, no additional cards can be clicked.
 
-11) If the timer expires before all 6 pairs are matched, you lose and can play again by clicking the Start Game button.
+11) If all 6 pairs are matched before the 60 second timer expires, You Win!
 
-12) Win/loss condition:
-    Timer? (code from Stack Overflow dot com)
-    Max numClicks?
+12) If the timer expires before all 6 pairs are matched, you lose and can play again by clicking the __Start Game__ button.
 
-CACHED ELEMENTS: 
+13) Win/loss condition:
+    
+    *Timer? (code from Stack Overflow dot com)
+    
+    *Max numClicks?
+
+__CACHED ELEMENTS:__ 
+
 CONST - Start Game button
 
-EVENT LISTENERS: 
-handle Click for two cards
-handle Click reset/Start Game button
+__EVENT LISTENERS:__
+
+`handleClick` for two cards
+
+`handle Click` `reset/Start Game` button
 
 
-handleClicks:
-    Max two clicks per turn before If/Else runs to match the cards and determine if a matched pair was made.
+`handleClicks`:
+    Max two clicks per turn before `if/else` runs to match the cards and determine if a matched pair was made.
 
-document query selector to obtain the image of the clicked card
+`document query selector` to obtain the image of the clicked card
 
- if/else
-    to determine if the click is the 1st click or the 2nd click
-
-if/else
-    if document query selector of the ${first card} source equals to the ${second card} source,
-
-    then numClicks resets to 0 so the game can continue
-    matchedPairs is called
-
-Compare cardPairs to determine if they are a match with event.target.parentElement.id
+`if/else`
     
-    else
+to determine if the click is the 1st click or the 2nd click
+
+`if/else`
+
+`if` document query selector of the `${first card}` source equals to the `${second card}` source,
+
+then `numClicks` resets to 0 so the game can continue
+`matchedPairs` is called
+
+Compare `cardPairs` to determine if they are a match with `event.target.parentElement.id`
     
-    The setTimer function is called to flip the cards back to cardBack in 2 seconds
+`else`
+    
+The setTimer function is called to flip the cards back to cardBack in 2 seconds
     and setAttribute method is used to return both cards back to the cardBack image
 
-    and numClicks is reset back to 0
+and `numClicks` is reset back to 0
 
-if matchedPairs === 6 within the 60 second game timer, the message "You Win!"" appears
+if `matchedPairs === 6` within the 60 second game timer, the message "You Win!" appears
 
-If matchedPairs does not equal (!=) 6 within the 60 second timer, the player loses and they are offered to play again. 
+If `matchedPairs (!=) 6` within the 60 second timer, the player loses and they are offered to play again. 
 
 
-Reset function sets the matchedPairs and numClicks back to 0 and blanks out the message (message being the timer and win/loss condtion)
+Reset function sets the `matchedPairs` and `numClicks` back to 0 and blanks out the message (message being the timer and win/loss condtion)
 
-Then,
-The Fisher Yates suffle function is called to randomize the cardFronts when the Start Game button is clicked. 
+Then, the Fisher Yates suffle function is called to randomize the cardFronts when the Start Game button is clicked. 
 
 
 
@@ -344,17 +351,17 @@ Insert your Build/Code Process here: -->
 
 Professor Usman started assisting me with the following code:
 
-const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
+>const targetImage = document.querySelector(`#${event.target.parentElement.id} img`)
 
-Assistant Professor Joe assisted by giving me the array breakdown to be able to assign 6 images twice with the cardPair variable.
+Assistant Professor Joe assisted by giving me the array breakdown to be able to assign 6 images twice with the `cardPair` variable.
 
 Assistant Professor Joe suggested the Fisher Yates shuffle function to randomize the card
 
-From there I was able to re-read the course notes, review code from previous lectures and labs, google, two additional text books from the library: 
+>From there I was able to re-read the course notes & the Level Up notes, review code from previous lectures and labs, google, two additional text books from the library: 
     (JavaScript A Beginners Guide by John Pollock
     JavaScript by Mike McGrath)
 
-    and just try about a million things and jumbled together this mess. 
+and just try about a million things and jumbled together this mess. 
 
 
 <!-- Challenges
@@ -381,12 +388,14 @@ Insert your Challenges here: -->
 Every single thing. 
 Especially this:
 
-let id = event.target.parentElement.id.substring(4)
+>let id = event.target.parentElement.id.substring(4)
 
 and this from the randomize function:
-        let temp = cards[i]; 
-        cards[i] = cards[index];
-        cards[index] = temp;
+>        let temp = cards[i]; 
+>        cards[i] = cards[index];
+>        cards[index] = temp;
+
+I think I made the game harder than it needed to be. I tend to overthink things and that trips me up.
 
 <!-- Wins
 
@@ -405,7 +414,7 @@ Insert your Wins here: -->
 
 ### Wins:
 
-Completing the game
+Completing the game.
 
 
 <!-- Key Learnings/Takeaways
@@ -428,6 +437,11 @@ Insert your Key Learnings/Takeaways here: -->
 ### Key Learnings/ Takeaways:
 
 Everything was a key learning experience.
+
+Planning is important to not get turned around.
+
+
+
 Takeaways: try everything
 
 <!-- Bugs
@@ -445,6 +459,7 @@ Insert your Bugs here: -->
 ### Bugs:
 
 The images do not fit fully in their boxes.
+
 If the game is played too quickly, the cards flip incorrectly.
 
 
@@ -462,7 +477,11 @@ Insert your Future Improvements here: -->
 
 ### Future Improvements:
 
-Fix card sizes to fit perfectly in their boxes
+Fix card sizes to fit perfectly in their boxes.
+
 Fix timer.
+
 Add 2nd player.
+
 Add more cards. 
+
